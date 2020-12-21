@@ -40,10 +40,13 @@ if(Session::has('user'))
             <ul class="dropdown-menu">
               <li><a href="/logout">Logout</a></li>
             </ul>
-          
+          </li>
+          @else
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+
           @endif
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-
